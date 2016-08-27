@@ -29,7 +29,7 @@ DETECT XSS
 ```
 In the above commands, the attack which will only be identified by NIDS will be that on destination address 7.7.7.7 because this is an active host of the network in which NIDS is installed. On the other hand, the attack on 9.9.9.9 will not be detected.
 
-# Simulator Options
+# Simulator Commands
 
 ATTACK [type of attack] [destination IP address]
 [type of attack] = DOS,XSS,RFI,SQL,SHELL,REMBUFF,MALWARE,BRUTE,ARP,CSRF,MASQUERADE,PROBE,HIJACK
@@ -77,7 +77,7 @@ HELP
 
 
 
-# Examples with random commands
+# Examples
 ```
 ATTACK DOS 7.7.7.7
 ATTACK SHELL 2.2.2.2
