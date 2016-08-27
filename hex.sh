@@ -21,7 +21,6 @@ do
 > /Users/fsiamp/Desktop/binary.file
 
 
-
 count=1
 random_file_size=20
 hex_value="00"
@@ -34,8 +33,6 @@ file_size=$(echo -n $(wc -c < /bin/csh))
 
 for (( p = 0 ;  p <= 10;  p++  ))
 do
-
-
 
 
 rand=$[ $RANDOM % 300]
