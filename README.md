@@ -9,10 +9,10 @@ Type HELP in the console in order to see the available commands. RHAPIS is writt
 
 The first commands that you must enter in order to install a virtual network intrusion detection system are the following:
 
-SET NETIP1 <ip address> , basic address of network in which NIDS is installed (network counters are 1-6).<br>
-SET HOSTIP1 <ip address> , address of a host inside NIDS (host counters are 1-6).<Br>
-INCLUDE config , loads a random configuration file<br>
-INCLUDE ruleset, reads a set of rules that will be identified by the intrusion detection system<br>
+<b>SET NETIP1</b> [ip address], basic address of network in which NIDS is installed (network counters are 1-6).<br>
+<b>SET HOSTIP1</b> [ip address], address of a host inside NIDS (host counters are 1-6).<Br>
+<b>INCLUDE config</b>, loads a random configuration file<br>
+<b>INCLUDE ruleset</b>, reads a set of rules that will be identified by the intrusion detection system<br>
 
 Now you have activated detectability.
 
@@ -31,50 +31,49 @@ In the above commands, the attack which will only be identified by NIDS will be 
 
 # Simulator Commands
 
-ATTACK [type of attack] [destination IP address]
+<b>ATTACK</b> [type of attack] [destination IP address]
 [type of attack] = DOS,XSS,RFI,SQL,SHELL,REMBUFF,MALWARE,BRUTE,ARP,CSRF,MASQUERADE,PROBE,HIJACK
 
-REPEAT [type of attack]
+<b>REPEAT</b> [type of attack]
 [type of attack] = DOS,SHELL,REMBUFF,CSRF,SQL,XSS,ARP,RFI
 
-GENERATE [type of traffic] [number of packets]
+<b>GENERATE</b> [type of traffic] [number of packets]
 [type of traffic] = IN,OUT,MAL
 
-SEND [type of packets] [number of packets] [destination IP address]
+<b>SEND</b> [type of packets] [number of packets] [destination IP address]
 [type of packets] = ACK,TCP,RST,FIN,MALF,UDP,SYN
 
-INCLUDE ruleset,config
+<b>INCLUDE</b> ruleset,config
 
-EXPORT coordinates/proxies
+<b>EXPORT</b> coordinates/proxies
 
-ANONYMIZE
+<b>ANONYMIZE</b>
 
-SET [network/hosts] [IP address]
+<b>SET</b> [network/hosts] [IP address]
 [network/hosts]= NETIP1,NETIP2,NETIP3,NETIP4,NETIP5,HOSTIP1,HOSTIP2,HOSTIP3,HOSTIP4,HOSTIP5,HOSTIP6,ATTHOSTIP1,ATTHOSTIP2,ATTHOSTIP3,ATTHOSTIP4,ATTHOSTIP5,ATTHOSTIP6,ATTNETIP1,ATTNETIP2,ATTNETIP3,ATTNETIP4,ATTNETIP4,ATTNETIP5
 
-HIDE/UNHIDE [undetectability]
+<b>HIDE/UNHIDE</b> [undetectability]
 [undetectability] = MIX,DC
 
-INFO
+<b>INFO</b>
 
-ATTEMPT [type of attack] [destination IP address]
+<b>ATTEMPT</b> [type of attack] [destination IP address]
 [type of attack] = DOS,XSS,LDAP,XPATH,SHELL
 
-DETECT [type of attack]
+<b>DETECT</b> [type of attack]
 [type of attack] = DOS,XSS,RFI,SQL,SHELL,REMBUFF,MALWARE,BRUTE,ARP,CSRF,MASQUERADE,PROBE,HIJACK
 
-ALARMS
+<b>ALARMS</b>
 
-VISUALIZE
+<b>VISUALIZE</b>
 
-DATASET
+<b>DATASET</b>
 
-INTRUDERS
+<b>INTRUDERS</b>
 
-LIST attributes,commands
+<b>LIST attributes,commands
 
-HELP
-
+<b>HELP</b>
 
 
 # Examples
