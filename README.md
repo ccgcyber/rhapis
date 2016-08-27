@@ -1,14 +1,18 @@
 ![alt tag](http://rhapis-data.appspot.com/hylxewMvLuCRVA4SdeC5FVxH5IB8yeQwNBbodEytie7BOt0MFCUzApSlFxWj81vdw2NehqlbC4dEcilfZJSVl7fllaz6GzdlR2VNll98KEJpK8aGtro11NKjkjLx5QeL3JcCji4BHkWM2LqdyzhfJ4nz9jPzcZEk5vLqIu1eW180VoDaQyaw3wtaX9Oe.png)
 
-                                                               
+<b>RHAPIS - Network Intrusion Detection Systems Simulator</b><br>
+http://rhapis-data.appspot.com
+
+# Basic Usage
+
 Type HELP in the console in order to see the available commands. RHAPIS is written in Lua language. You need to have installed Lua in order to run RHAPIS.
 
 The first commands that you must enter in order to install a virtual network intrusion detection system are the following:
 
-SET NETIP1 <ip address> , basic address of network in which NIDS is installed (network counters are 1-6).
-SET HOSTIP1 <ip address> , address of a host inside NIDS (host counters are 1-6).
-INCLUDE config , loads a random configuration file
-INCLUDE ruleset, reads a set of rules that will be identified by the intrusion detection system
+SET NETIP1 <ip address> , basic address of network in which NIDS is installed (network counters are 1-6).<br>
+SET HOSTIP1 <ip address> , address of a host inside NIDS (host counters are 1-6).<Br>
+INCLUDE config , loads a random configuration file<br>
+INCLUDE ruleset, reads a set of rules that will be identified by the intrusion detection system<br>
 
 Now you have activated detectability.
 
@@ -16,15 +20,16 @@ SET ATTHOSTIP1 <ip address>. With the current command you set an attacker's iden
 
 In order your attacks to be recognized by the intrusion detection system, you need to attack hosts that are part of NIDS. 
 
-For example:
-SET HOSTIP1 7.7.7.7
-ATTACK XSS 7.7.7.7
-ATTACK XSS 9.9.9.9
-DETECT XSS
+For example:<br>
+SET HOSTIP1 7.7.7.7<br>
+ATTACK XSS 7.7.7.7<Br>
+ATTACK XSS 9.9.9.9<Br>
+DETECT XSS<br>
 
 In the above commands, the attack which will only be identified by NIDS will be that on destination address 7.7.7.7 because this is an active host of the network in which NIDS is installed. On the other hand, the attack on 9.9.9.9 will not be detected.
 
-Simulator Options:
+# Simulator Options
+
 ATTACK [type of attack] [destination IP address]
 [type of attack] = DOS,XSS,RFI,SQL,SHELL,REMBUFF,MALWARE,BRUTE,ARP,CSRF,MASQUERADE,PROBE,HIJACK
 
@@ -71,15 +76,15 @@ HELP
 
 
 
-Examples with random commands:
+# Examples with random commands
 
-ATTACK DOS 7.7.7.7
-ATTACK SHELL 2.2.2.2
-GENERATE IN 660
-DETECT SHELL
-GENERATE MAL 1500
-ATTACK MALWARE 5.5.5.5
-DATASET
-ATTEMPT XSS 10.10.10.10
+ATTACK DOS 7.7.7.7<br>
+ATTACK SHELL 2.2.2.2<br>
+GENERATE IN 660<br>
+DETECT SHELL<Br>
+GENERATE MAL 1500<br>
+ATTACK MALWARE 5.5.5.5<br>
+DATASET<br>
+ATTEMPT XSS 10.10.10.10<br>
 
 Inside the main directory you can find log files for every kind of information you enter on RHAPIS console (datasets).
