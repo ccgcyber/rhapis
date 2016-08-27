@@ -1,1 +1,91 @@
-# rhapis
+8888888b.  888    888        d8888 8888888b. 8888888 .d8888b.  
+888   Y88b 888    888       d88888 888   Y88b  888  d88P  Y88b 
+888    888 888    888      d88P888 888    888  888  Y88b.      
+888   d88P 8888888888     d88P 888 888   d88P  888   "Y888b.   
+8888888P"  888    888    d88P  888 8888888P"   888      "Y88b. 
+888 T88b   888    888   d88P   888 888         888        "888 
+888  T88b  888    888  d8888888888 888         888  Y88b  d88P 
+888   T88b 888    888 d88P     888 888       8888888 "Y8888P"  
+                                                               
+Type HELP in the console in order to see the available commands. RHAPIS is written in Lua language. You need to have installed Lua in order to run RHAPIS.
+
+The first commands that you must enter in order to install a virtual network intrusion detection system are the following:
+
+SET NETIP1 <ip address> , basic address of network in which NIDS is installed (network counters are 1-6).
+SET HOSTIP1 <ip address> , address of a host inside NIDS (host counters are 1-6).
+INCLUDE config , loads a random configuration file
+INCLUDE ruleset, reads a set of rules that will be identified by the intrusion detection system
+
+Now you have activated detectability.
+
+SET ATTHOSTIP1 <ip address>. With the current command you set an attacker's identity. In this way, you will be able to make virtual attacks on random destinations by using the command ATTACK afterwards.Host counters are again 1-6.
+
+In order your attacks to be recognized by the intrusion detection system, you need to attack hosts that are part of NIDS. 
+
+For example:
+SET HOSTIP1 7.7.7.7
+ATTACK XSS 7.7.7.7
+ATTACK XSS 9.9.9.9
+DETECT XSS
+
+In the above commands, the attack which will only be identified by NIDS will be that on destination address 7.7.7.7 because this is an active host of the network in which NIDS is installed. On the other hand, the attack on 9.9.9.9 will not be detected.
+
+Simulator Options:
+ATTACK [type of attack] [destination IP address]
+[type of attack] = DOS,XSS,RFI,SQL,SHELL,REMBUFF,MALWARE,BRUTE,ARP,CSRF,MASQUERADE,PROBE,HIJACK
+
+REPEAT [type of attack]
+[type of attack] = DOS,SHELL,REMBUFF,CSRF,SQL,XSS,ARP,RFI
+
+GENERATE [type of traffic] [number of packets]
+[type of traffic] = IN,OUT,MAL
+
+SEND [type of packets] [number of packets] [destination IP address]
+[type of packets] = ACK,TCP,RST,FIN,MALF,UDP,SYN
+
+INCLUDE ruleset,config
+
+EXPORT coordinates/proxies
+
+ANONYMIZE
+
+SET [network/hosts] [IP address]
+[network/hosts]= NETIP1,NETIP2,NETIP3,NETIP4,NETIP5,HOSTIP1,HOSTIP2,HOSTIP3,HOSTIP4,HOSTIP5,HOSTIP6,ATTHOSTIP1,ATTHOSTIP2,ATTHOSTIP3,ATTHOSTIP4,ATTHOSTIP5,ATTHOSTIP6,ATTNETIP1,ATTNETIP2,ATTNETIP3,ATTNETIP4,ATTNETIP4,ATTNETIP5
+
+HIDE/UNHIDE [undetectability]
+[undetectability] = MIX,DC
+
+INFO
+
+ATTEMPT [type of attack] [destination IP address]
+[type of attack] = DOS,XSS,LDAP,XPATH,SHELL
+
+DETECT [type of attack]
+[type of attack] = DOS,XSS,RFI,SQL,SHELL,REMBUFF,MALWARE,BRUTE,ARP,CSRF,MASQUERADE,PROBE,HIJACK
+
+ALARMS
+
+VISUALIZE
+
+DATASET
+
+INTRUDERS
+
+LIST attributes,commands
+
+HELP
+
+
+
+Examples with random commands:
+
+ATTACK DOS 7.7.7.7
+ATTACK SHELL 2.2.2.2
+GENERATE IN 660
+DETECT SHELL
+GENERATE MAL 1500
+ATTACK MALWARE 5.5.5.5
+DATASET
+ATTEMPT XSS 10.10.10.10
+
+Inside the main directory you can find log files for every kind of information you enter on RHAPIS console (datasets).
