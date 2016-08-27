@@ -16,7 +16,7 @@ The first commands that you must enter in order to install a virtual network int
 
 Now you have activated detectability.
 
-SET ATTHOSTIP1 <ip address>. With the current command you set an attacker's identity. In this way, you will be able to make virtual attacks on random destinations by using the command ATTACK afterwards.Host counters are again 1-6.
+<b>SET ATTHOSTIP1</b> [ip address]. With the current command you set an attacker's identity. In this way, you will be able to make virtual attacks on random destinations by using the command ATTACK afterwards.Host counters are again 1-6.
 
 In order your attacks to be recognized by the intrusion detection system, you need to attack hosts that are part of NIDS. 
 
