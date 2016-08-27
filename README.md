@@ -71,7 +71,7 @@ In the above commands, the attack which will only be identified by NIDS will be 
 
 <b>INTRUDERS</b>
 
-<b>LIST attributes,commands
+<b>LIST</b> attributes,commands
 
 <b>HELP</b>
 
