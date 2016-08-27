@@ -21,11 +21,12 @@ SET ATTHOSTIP1 <ip address>. With the current command you set an attacker's iden
 In order your attacks to be recognized by the intrusion detection system, you need to attack hosts that are part of NIDS. 
 
 For example:<br>
-SET HOSTIP1 7.7.7.7<br>
-ATTACK XSS 7.7.7.7<Br>
-ATTACK XSS 9.9.9.9<Br>
-DETECT XSS<br>
-
+```
+SET HOSTIP1 7.7.7.7
+ATTACK XSS 7.7.7.7
+ATTACK XSS 9.9.9.9
+DETECT XSS
+```
 In the above commands, the attack which will only be identified by NIDS will be that on destination address 7.7.7.7 because this is an active host of the network in which NIDS is installed. On the other hand, the attack on 9.9.9.9 will not be detected.
 
 # Simulator Options
@@ -77,14 +78,14 @@ HELP
 
 
 # Examples with random commands
-
-ATTACK DOS 7.7.7.7<br>
-ATTACK SHELL 2.2.2.2<br>
-GENERATE IN 660<br>
-DETECT SHELL<Br>
-GENERATE MAL 1500<br>
-ATTACK MALWARE 5.5.5.5<br>
-DATASET<br>
-ATTEMPT XSS 10.10.10.10<br>
-
+```
+ATTACK DOS 7.7.7.7
+ATTACK SHELL 2.2.2.2
+GENERATE IN 660
+DETECT SHELL
+GENERATE MAL 1500
+ATTACK MALWARE 5.5.5.5
+DATASET
+ATTEMPT XSS 10.10.10.10
+```
 Inside the main directory you can find log files for every kind of information you enter on RHAPIS console (datasets).
