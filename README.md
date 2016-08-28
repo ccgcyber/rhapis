@@ -3,6 +3,12 @@
 <b>RHAPIS - Network Intrusion Detection Systems Simulator</b><br>
 http://rhapis-data.appspot.com
 
+# Screenshots
+
+![alt tag](https://s9.postimg.org/euz8x1t2n/screen1.png)
+
+![alt tag](https://s10.postimg.org/tqxwx76qx/screen2.png)
+
 # Basic Usage
 
 Type HELP in the console in order to see the available commands. RHAPIS is written in Lua language. You need to have installed Lua in order to run RHAPIS.
