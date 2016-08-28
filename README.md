@@ -53,15 +53,11 @@ In the above commands, the attack which will only be identified by NIDS will be 
 
 <b>EXPORT</b> coordinates/proxies
 
-<b>ANONYMIZE</b>
-
 <b>SET</b> [network/hosts] [IP address]
 [network/hosts]= NETIP1,NETIP2,NETIP3,NETIP4,NETIP5,HOSTIP1,HOSTIP2,HOSTIP3,HOSTIP4,HOSTIP5,HOSTIP6,ATTHOSTIP1,ATTHOSTIP2,ATTHOSTIP3,ATTHOSTIP4,ATTHOSTIP5,ATTHOSTIP6,ATTNETIP1,ATTNETIP2,ATTNETIP3,ATTNETIP4,ATTNETIP4,ATTNETIP5
 
 <b>HIDE/UNHIDE</b> [undetectability]
 [undetectability] = MIX,DC
-
-<b>INFO</b>
 
 <b>ATTEMPT</b> [type of attack] [destination IP address]
 [type of attack] = DOS,XSS,LDAP,XPATH,SHELL
@@ -69,17 +65,10 @@ In the above commands, the attack which will only be identified by NIDS will be 
 <b>DETECT</b> [type of attack]
 [type of attack] = DOS,XSS,RFI,SQL,SHELL,REMBUFF,MALWARE,BRUTE,ARP,CSRF,MASQUERADE,PROBE,HIJACK
 
-<b>ALARMS</b>
-
-<b>VISUALIZE</b>
-
-<b>DATASET</b>
-
-<b>INTRUDERS</b>
-
 <b>LIST</b> attributes,commands
 
-<b>HELP</b>
+The rest possible commands to be used are:<br> 
+<b>ALARMS</b>, <b>VISUALIZE</b>, <b>DATASET</b>, <b>INTRUDERS</b>, <b>HELP</b>, <b>INFO</b>, <b>ANONYMIZE</b>
 
 
 # Examples
