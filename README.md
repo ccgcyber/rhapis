@@ -24,7 +24,7 @@ Now you have activated detectability.
 
 <b>SET ATTHOSTIP1</b> [ip address]. With the current command you set an attacker's identity. In this way, you will be able to make virtual attacks on random destinations by using the command ATTACK afterwards.Host counters are again 1-6.
 
-In order your attacks to be recognized by the intrusion detection system, you need to attack hosts that are part of NIDS. 
+In order your attacks to be recognized by the intrusion detection system, you need to attack hosts that are part of the established network intrusion detection system. 
 
 For example:<br>
 ```
@@ -33,7 +33,7 @@ ATTACK XSS 7.7.7.7
 ATTACK XSS 9.9.9.9
 DETECT XSS
 ```
-In the above commands, the attack which will only be identified by NIDS will be that on destination address 7.7.7.7 because this is an active host of the network in which NIDS is installed. On the other hand, the attack on 9.9.9.9 will not be detected.
+In the above commands, the attack which will only be identified by NIDS will be that on destination address 7.7.7.7 because this is an active host of the network in which NIDS is installed. <br><br>On the other hand, the attack on 9.9.9.9 will not be detected.
 
 # Simulator Commands
 
@@ -82,4 +82,4 @@ ATTACK MALWARE 5.5.5.5
 DATASET
 ATTEMPT XSS 10.10.10.10
 ```
-Inside the main directory you can find log files for every kind of information you enter on RHAPIS console (datasets).
+Inside the main directory you can find log files for every kind of information you enter on RHAPIS console (datasets, alarms, configuration, mappings, intruders etc.).
