@@ -55,6 +55,8 @@ In the above commands, the attack which will only be identified by NIDS will be 
 
 <b>DETECT</b> [type of attack] = DOS,XSS,RFI,SQL,SHELL,REMBUFF,MALWARE,BRUTE,ARP,CSRF,MASQUERADE,PROBE,HIJACK
 
+<b>ANALYZE</b> [type of data] = HEX/FRAMES
+
 The rest possible commands to be used are:<br> 
 <b>ALARMS</b>, <b>VISUALIZE</b>, <b>DATASET</b>, <b>INTRUDERS</b>, <b>HELP</b>, <b>INFO</b>, <b>ANONYMIZE</b>
 
