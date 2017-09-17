@@ -3,6 +3,8 @@
 <b>RHAPIS - Network Intrusion Detection Systems Simulator</b><br>
 http://rhapis-data.appspot.com
 
+[![Build Status](https://travis-ci.org/fsiamp/rhapis.svg?branch=master)](https://travis-ci.org/fsiamp/rhapis)
+
 # Screenshots
 
 ![alt tag](https://s9.postimg.org/euz8x1t2n/screen1.png)
