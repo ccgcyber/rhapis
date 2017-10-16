@@ -74,4 +74,4 @@ ATTACK MALWARE 5.5.5.5
 DATASET
 ATTEMPT XSS 10.10.10.10
 ```
-Inside the main directory you can find log files for every kind of information you enter on RHAPIS console (datasets, alarms, configuration, intruders, etc).
+Inside the main directory you can find log files for every type of information you enter on RHAPIS console (datasets, alarms, configuration, intruders, etc).
