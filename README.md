@@ -7,9 +7,9 @@ http://rhapis-data.appspot.com
 
 # Screenshots
 
-![alt tag](https://s9.postimg.org/euz8x1t2n/screen1.png)
+![alt tag](https://s9.postimg.cc/euz8x1t2n/screen1.png)
 
-![alt tag](https://s10.postimg.org/tqxwx76qx/screen2.png)
+![alt tag](https://s10.postimg.cc/tqxwx76qx/screen2.png)
 
 # Basic Usage
 
